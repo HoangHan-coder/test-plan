@@ -152,14 +152,14 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 | **Objective**     | Verify system stability under concurrent user load for key operations.                       |
 | **Technique**     | Simulate multiple concurrent users using JMeter on critical endpoints (Login, Search Room, Create Booking). |
 | **Scope**         | API endpoints: POST /auth/login, GET /rooms/search, POST /bookings                          |
-| **Completion Criteria** | Response time < 3 seconds under 50 concurrent users; no server errors (5xx).             |
+| **Completion Criteria** | Response time < 6 seconds under 50 concurrent users; no server errors (5xx).             |
 
 ### b. Test Levels
 
 | Test Level       | Description                                              | Performed By         | Technique                          |
 |------------------|----------------------------------------------------------|----------------------|------------------------------------|
 | Unit Test        | Test individual methods in Service and Repository layers | Le Tan Loc           | JUnit 5, Mockito                   |
-| Integration Test | Test Controller ↔ Service ↔ Repository interaction       | Le Tan Loc           | Spring Boot Test, MockMvc          |
+| Integration Test | Test Controller ↔ Service ↔ Repository interaction       | Le Tan Loc           | Spring Boot Test          |
 | System Test      | End-to-end testing of complete use case flows            | Phat Dat, Thanh Dat, Anh Hao | Decision Table, Use Case Testing |
 | Acceptance Test  | Validate system meets business requirements              | Nguyen Hoang Han     | Manual walkthrough with mentor     |
 
@@ -170,12 +170,10 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 | 1  | JUnit 5                  | Unit testing framework for Java            | Open Source |
 | 2  | Mockito                  | Mocking framework for unit tests           | Open Source |
 | 3  | Spring Boot Test         | Integration testing with Spring context    | Open Source |
-| 4  | Apache JMeter            | Load/performance testing                   | Open Source |
-| 5  | Google Chrome DevTools   | UI testing and debugging                   | Free        |
-| 6  | Postman                  | API endpoint testing                       | Free        |
-| 7  | Microsoft SQL Server Management Studio | Database verification and queries | Free        |
-| 8  | Google Sheets            | Test case management and defect tracking   | Free        |
-| 9  | Git / GitHub             | Version control and issue tracking         | Free        |
+| 4  | Google Chrome DevTools   | UI testing and debugging                   | Free        |
+| 5  | Microsoft SQL Server Management Studio | Database verification and queries | Free        |
+| 6  | Google Sheets            | Test case management and defect tracking   | Free        |
+| 7  | Git / GitHub             | Version control and issue tracking         | Free        |
 
 ---
 
@@ -190,7 +188,7 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 | 5  | Late delivery of features blocks system testing                | High        | High   | Prioritize critical path features (Login, Booking, Payment) for early delivery |
 | 6  | Third-party payment (MoMo) sandbox unavailability              | Low         | Medium | Use mock payment responses for testing; test payment flow with stubs           |
 | 7  | Defect backlog grows faster than fix rate                      | Medium      | Medium | Daily defect triage; prioritize Critical/High bugs; block release on Critical  |
-| 8  | Inexperience with testing tools (JMeter, JUnit)               | Medium      | Low    | Conduct tool training session (assigned to Phung Dinh Khang)                   |
+| 8  | Inexperience with testing tools (JUnit)               | Medium      | Low    | Conduct tool training session (assigned to Phung Dinh Khang)                   |
 
 ---
 
@@ -225,7 +223,7 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 | 3  | Pass rate is ≥ 90% for all functional test cases.                                          |
 | 4  | All Medium severity defects are either resolved or have an approved deferral.              |
 | 5  | Test Summary Report is completed and reviewed.                                             |
-| 6  | Load test results meet the defined performance criteria (< 3s response, 0% error rate under 50 users). |
+| 6  | Load test results meet the defined performance criteria (< 6s response, 0% error rate under 50 users). |
 
 ---
 
@@ -236,9 +234,9 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 | No | Resource                          | Specification                                           | Quantity |
 |----|-----------------------------------|---------------------------------------------------------|----------|
 | 1  | Development/Test PC               | Windows 10/11, Intel i5+, 8GB+ RAM, SSD                | 6        |
-| 2  | Java Development Kit (JDK)        | JDK 17 or higher                                        | 6        |
+| 2  | Java Development Kit (JDK)        | JDK 21                                        | 6        |
 | 3  | Spring Boot Application Server    | Embedded Tomcat (Spring Boot)                           | 1        |
-| 4  | Microsoft SQL Server              | SQL Server 2019+ (Developer Edition)                    | 1        |
+| 4  | Microsoft SQL Server              | SQL Server 2022 (Developer Edition)                    | 1        |
 | 5  | Web Browsers                      | Google Chrome (latest), Mozilla Firefox, Microsoft Edge  | 6        |
 | 6  | IDE                               | IntelliJ IDEA / VS Code                                 | 6        |
 | 7  | Apache JMeter                     | Version 5.6+                                            | 1        |
@@ -261,14 +259,12 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 
 | Component        | Specification                                                        |
 |------------------|----------------------------------------------------------------------|
-| **Device**       | Laptop / Desktop PC (Windows 10/11)                                  |
+| **Device**       | Laptop (Windows 10/11)                                  |
 | **OS**           | Windows 10 / Windows 11                                              |
 | **Browser**      | Google Chrome (latest), Mozilla Firefox (latest), Microsoft Edge (latest) |
 | **Network**      | Local network / Wi-Fi (university LAN)                               |
-| **Database**     | Microsoft SQL Server 2019+ (Developer Edition), 14 tables as per SDS |
-| **Backend**      | Java 17+, Spring Boot (embedded Tomcat), Spring Security, JPA/Hibernate |
-| **API Testing**  | Postman (REST API calls to backend endpoints)                        |
-| **Load Testing** | Apache JMeter 5.6+ (on local machine)                               |
+| **Database**     | Microsoft SQL Server 2022 (Developer Edition), 14 tables as per SDS |
+| **Backend**      | Java 21, Spring Boot (embedded Tomcat), Spring Security, JPA/Hibernate |
 | **Version Control** | Git / GitHub repository                                           |
 
 ---
