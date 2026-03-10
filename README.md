@@ -2,9 +2,9 @@
 
 ## Booking Homestay System – BookNow
 
-**Subject:** SWP391 – Software Development Project  
+**Subject:** SWT391 – Software Development Project  
 **Group:** 02 – SE1910  
-**Mentor:** Le Thi Thu Lan  
+**Mentor:** Lam Le Huan  
 **Version:** 1.0  
 **Date:** March 10, 2026  
 
@@ -59,10 +59,6 @@ The **Booking Homestay System (BookNow)** is a web-based application designed to
 - **Database:** Microsoft SQL Server
 - **Architecture:** MVC (Controller → Service → Repository)
 - **Packages:** `booknow` root package with `controllers`, `services`, `repositories`, `security`, `utils`, `model` (entities, dto, map)
-
-**Reference Documents:**
-- Software Description Specification (SDS): SWP392_SE1910_G02_SDS.docx
-- Test Plan Template: Template_TestPlan.docx
 
 ---
 
