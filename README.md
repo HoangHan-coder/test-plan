@@ -170,10 +170,11 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 | 1  | JUnit 5                  | Unit testing framework for Java            | Open Source |
 | 2  | Mockito                  | Mocking framework for unit tests           | Open Source |
 | 3  | Spring Boot Test         | Integration testing with Spring context    | Open Source |
-| 4  | Google Chrome DevTools   | UI testing and debugging                   | Free        |
-| 5  | Microsoft SQL Server Management Studio | Database verification and queries | Free        |
-| 6  | Google Sheets            | Test case management and defect tracking   | Free        |
-| 7  | Git / GitHub             | Version control and issue tracking         | Free        |
+| 4  | Selenium                 | Automation Testing (Functional / UI Testing)         | Open Source|
+| 5  | Google Chrome DevTools   | UI testing and debugging                   | Free        |
+| 6  | Microsoft SQL Server Management Studio | Database verification and queries | Free        |
+| 7  | Google Sheets            | Test case management and defect tracking   | Free        |
+| 8  | Git / GitHub             | Version control and issue tracking         | Free        |
 
 ---
 
@@ -239,8 +240,6 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 | 4  | Microsoft SQL Server              | SQL Server 2022 (Developer Edition)                    | 1        |
 | 5  | Web Browsers                      | Google Chrome (latest), Mozilla Firefox, Microsoft Edge  | 6        |
 | 6  | IDE                               | IntelliJ IDEA / VS Code                                 | 6        |
-| 7  | Apache JMeter                     | Version 5.6+                                            | 1        |
-| 8  | Postman                           | Latest version                                          | 6        |
 
 ### b. Human Resources
 
@@ -248,10 +247,10 @@ The objective of this test plan is to verify and validate the **Booking Homestay
 |----|-----------------------|----------------------------------------------------|--------------------------------------------------------------------------|
 | 1  | Nguyen Hoang Han      | Test Lead / Test Plan Author                       | Create Test Plan, coordinate testing, review test results, acceptance test |
 | 2  | Le Tan Loc            | Unit Tester                                        | Write and execute unit tests (JUnit 5, Mockito) for Service/Repository layers |
-| 3  | Nguyen Hung Phat Dat  | System Tester (Decision Table)                     | Design and execute Decision Table test cases for Feedback, Registration, Profile modules |
+| 3  | Nguyen Hung Phat Dat  | System Tester (Decision Table)                     | Design and execute Decision Table test cases for Registration Profile modules |
 | 4  | Vo Thanh Dat          | System Tester (Use Case Testing)                   | Design and execute Use Case test cases for Booking flow, Check-in/Check-out |
 | 5  | Vo Anh Hao            | System Tester (Use Case Testing)                   | Design and execute Use Case test cases for Booking flow, Payment, Room search |
-| 6  | Phung Dinh Khang      | Testing Tools Specialist                           | Set up and demonstrate testing tools (JMeter, Postman); execute load tests |
+| 6  | Phung Dinh Khang      | Testing Tools Specialist                           | Set up and demonstrate testing tools (JUnit 5, Selenium); execute load tests |
 
 ---
 
