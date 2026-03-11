@@ -41,9 +41,9 @@
 |----|-----------------------|------------|-------------------------|
 | 1  | Nguyen Hoang Han      | CE192048   | Leader – Test Plan      |
 | 2  | Le Tan Loc            | CE191560   | Unit Test               |
-| 3  | Nguyen Hung Phat Dat  | CE191354   | System Test – Decision Table Testing & Feedback |
-| 4  | Vo Thanh Dat          | CE191280   | System Test – Use Case Testing / Booking Flow   |
-| 5  | Vo Anh Hao            | CE191463   | System Test – Use Case Testing / Booking Flow   |
+| 3  | Nguyen Hung Phat Dat  | CE191354   | System Test – Decision Table Testing |
+| 4  | Vo Thanh Dat          | CE191280   | System Test – Use Case Testing   |
+| 5  | Vo Anh Hao            | CE191463   | System Test – Use Case Testing   |
 | 6  | Phung Dinh Khang      | CE191105   | Testing Tools           |
 
 ### 2. Project Description
